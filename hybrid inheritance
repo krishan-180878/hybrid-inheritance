@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+#include<conio.h>
+class student
+{ 
+  public:
+  	student()
+  	{cout<<"student information"<<endl;
+	}
+};
+class stdmarks
+{ 
+  public:
+  	stdmarks()
+	{
+	cout<<"student marks define performance"<<endl;
+	}
+};
+class name:public student
+{ 
+public:
+	name()
+	{
+	cout<<"my name is krishan";
+	}	
+};
+class perform:public student,public stdmarks
+{ 
+  public:
+  	perform()
+  	{
+  	cout<<"krishan gets good marks . so perform well";
+	  }
+};
+int main()
+{ 
+perform p1;
+getch();
+}
